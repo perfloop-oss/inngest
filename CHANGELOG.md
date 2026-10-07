@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.47.0] - 2026-10-07
+
+### 🚀 Features
+
+- *(state)* Persist a run's scheduled_at in run state (#4972)
+- *(dashboard)* Prompt sandbox upgrades on unpaid plans (#4984)
+- *(dashboard)* Make the Insights link more prominent in runs search (#4981)
+
+### 🐛 Bug Fixes
+
+- *(expressions)* Evaluate presence against concrete data (#4971)
+- *(api)* Support camelCase (and snake_case) run include selectors (#4939)
+- *(event)* Reject NUL characters in event names (#4973)
+
+### ⚡ Performance
+
+- *(queue)* Look up account priorities concurrently in AccountPeek (#4976)
+- *(constraintapi)* Let a capacity-release wake skip the limiting-constraint cache (#4983)
+
+### 🧪 Testing
+
+- *(batch)* Adding batching tests for valkey 9 (#4980)
+
 ## [v1.46.0] - 2026-10-06
 
 ### 🚀 Features
@@ -54,6 +77,7 @@ All notable changes to this project will be documented in this file.
 - *(ci)* Pin GitHub Actions to commit SHAs (#4932)
 - *(dashboard)* Make runs list REST + v2 traces backed only and v2 traces only for every other runs data (#4928)
 - *(queue)* Set Scope.EnvID from Item if Item.Identifier is not available (#4954)
+- *(release)* V1.46.0 (#4889)
 
 ### 🛡️ Security
 
